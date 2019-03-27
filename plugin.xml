@@ -15,6 +15,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="ASWebAuthSession">
                 <param name="ios-package" value="ASWebAuthSession" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
