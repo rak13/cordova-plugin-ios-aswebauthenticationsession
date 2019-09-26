@@ -34,8 +34,15 @@ ASWebAuthenticationSession *_authenticationVC;
                                        [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
                                    }];
         _authenticationVC = authenticationVC;
+        if (@available(iOS 13.0, *)) {
+            authenticationVC.presentationContextProvider = self;
+        }
         [authenticationVC start];
     }
+}
+
+- (nonnull ASPresentationAnchor)presentationAnchorForWebAuthenticationSession:(nonnull ASWebAuthenticationSession *)session  API_AVAILABLE(ios(12.0)){
+    return [[[UIApplication sharedApplication] windows] objectAtIndex:0];
 }
 
 @end
