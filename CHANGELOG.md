@@ -1,3 +1,7 @@
+# 1.1.4 (02/22/2020)
+* Merged [PR from pizzapanther](https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api/pull/1/) referencing cordova namespace
+when calling exec.
+
 # 1.1.3 (11/27/2019)
 * Wait for application to become active before calling start()
 
