@@ -5,7 +5,7 @@
 
 #import <Cordova/CDVAvailability.h>
 
-ASWebAuthenticationSession *_authenticationVC;
+ASWebAuthenticationSession *_webAuthenticationSessionVC;
 
 
 @implementation ASWebAuthSession;
@@ -23,7 +23,7 @@ ASWebAuthenticationSession *_authenticationVC;
                                    callbackURLScheme:redirectScheme
                                    completionHandler:^(NSURL * _Nullable callbackURL,
                                                        NSError * _Nullable error) {
-                                       _authenticationVC = nil;
+                                       _webAuthenticationSessionVC = nil;
                                        CDVPluginResult *result;
                                        if (callbackURL) {
                                            result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString: callbackURL.absoluteString];
@@ -33,7 +33,7 @@ ASWebAuthenticationSession *_authenticationVC;
                                        }
                                        [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
                                    }];
-        _authenticationVC = authenticationVC;
+        _webAuthenticationSessionVC = authenticationVC;
         [authenticationVC start];
     }
 }
