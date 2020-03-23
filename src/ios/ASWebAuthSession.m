@@ -6,7 +6,7 @@
 #import <Cordova/CDVAvailability.h>
 
 API_AVAILABLE(ios(12.0))
-ASWebAuthenticationSession *_authenticationVC;
+ASWebAuthenticationSession *_asAuthenticationVC;
 
 @implementation ASWebAuthSession;
 
@@ -14,7 +14,7 @@ ASWebAuthenticationSession *_authenticationVC;
 }
 
 -(void)appIsActive {
-    [_authenticationVC start];
+    [_asAuthenticationVC start];
 }
 
 - (void)start:(CDVInvokedUrlCommand *)command {
@@ -37,13 +37,13 @@ ASWebAuthenticationSession *_authenticationVC;
                                        }
 
                                        [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
-                                        _authenticationVC = nil;
+                                        _asAuthenticationVC = nil;
                                    }];
 
         // Need to keep a strong reference for < iOS 13.0 until the authentication session is complete
-        _authenticationVC = authenticationVC;
+        _asAuthenticationVC = authenticationVC;
         if (@available(iOS 13.0, *)) {
-            _authenticationVC.presentationContextProvider = self;
+            _asAuthenticationVC.presentationContextProvider = self;
         }
 
         UIApplicationState state = [UIApplication sharedApplication].applicationState;
