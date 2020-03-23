@@ -1,3 +1,7 @@
+# 1.1.5 (03/23/2020)
+* Merged [PR from petergrau](https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api/pull/2) renaming
+variable to prevent collision with cordova-plugin-sfauthenticationsession when both are used in project.
+
 # 1.1.4 (02/22/2020)
 * Merged [PR from pizzapanther](https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api/pull/1/) referencing cordova namespace
 when calling exec.
