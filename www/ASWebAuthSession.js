@@ -2,8 +2,8 @@ var PLUGIN_NAME = 'ASWebAuthSession';
 function ASWebAuthSession() {}
 
 ASWebAuthSession.prototype.start = function(redirectScheme, requestURL, callback, errorCallback) {
-  exec(callback, errorCallback, PLUGIN_NAME, 'start', [redirectScheme, requestURL]);
-}
+  cordova.exec(callback, errorCallback, PLUGIN_NAME, 'start', [redirectScheme, requestURL]);
+};
 
 ASWebAuthSession.install = function () {
   if (!window.plugins) {
