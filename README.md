@@ -1,3 +1,5 @@
+## I am no longer making updates to this fork. Please refer to the original repository, or fork this one in order to maintain it.
+
 # cordova-plugin-ios-aswebauthenticationsession-api
 Cordova Plugin for iOS 12 ASWebAuthenticationSession API. Originally forked from [rak13/cordova-plugin-ios-aswebauthenticationsession](https://github.com/rak13/cordova-plugin-ios-aswebauthenticationsession) and updated to address an [issue](https://github.com/rak13/cordova-plugin-ios-aswebauthenticationsession/issues/1) present after updating to iOS 13.
 
