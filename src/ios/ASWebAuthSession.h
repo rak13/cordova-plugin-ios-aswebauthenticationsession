@@ -1,9 +1,12 @@
 #import <Cordova/CDVPlugin.h>
+#import <AuthenticationServices/AuthenticationServices.h>
 
-@interface ASWebAuthSession : CDVPlugin {
+API_AVAILABLE(ios(12.0))
+@interface ASWebAuthSession : CDVPlugin<ASWebAuthenticationPresentationContextProviding> {
 }
 
-// The hooks for our plugin commands
 - (void)start:(CDVInvokedUrlCommand *)command;
+
+- (void)appIsActive;
 
 @end

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-ios-aswebauthenticationsession"
-        version="1.0.0">
+        id="cordova-plugin-ios-aswebauthenticationsession-api"
+        version="1.1.5">
     <name>ASWebAuthenticationSession</name>
-    <description>Cordova Plugin for iOS 12 ASWebAuthenticationSession API</description>
+    <description>Cordova Plugin for iOS 12/13 ASWebAuthenticationSession API</description>
     <license>MIT</license>
-    <keywords>ASWebAuthenticationSession,iOS 12,iOS,oAuth,Single Sign on,Privacy</keywords>
-    <repo>https://github.com/rak13/cordova-plugin-ios-aswebauthenticationsession.git</repo>
-    <issue>https://github.com/rak13/cordova-plugin-ios-aswebauthenticationsession/issues</issue>
+    <keywords>ASWebAuthenticationSession,iOS 12,iOS 13,iOS,oAuth,Single Sign on,Privacy</keywords>
+    <repo>https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api.git</repo>
+    <issue>https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api/issues</issue>
 
     <!-- ios -->
     <platform name="ios">
